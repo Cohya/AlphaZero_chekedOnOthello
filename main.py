@@ -15,12 +15,12 @@ coloredlogs.install(level = 'INFO') #Change this to DEBUG to see more info.
 #100
 args = dotdict({
         'numIters': 1000,
-        'numEps' : 2,             #(was 100) Number of comlete self-play games to simulate during a new iteration
+        'numEps' : 100,             #(was 100) Number of comlete self-play games to simulate during a new iteration
         'tempThreshold': 15,        #
         'updateThreshold': 0.6,     # During arena playoff, new nn will be accepted if threshold or more of games are won.)
         'maxlenOfQueue': 200000,    # Number of game examples to train nn's.
         'numMCTSims': 25,          # Number of games move for MCTS to simulate.
-        'arenaCompare': 4,         # was (40)Number of games to play during arena play to determine if new net will be accepted.
+        'arenaCompare': 40,         # was (40)Number of games to play during arena play to determine if new net will be accepted.
         'cpuct': 1,
         'checkpoint': './checkpoint_and_weights',
         'load_model': False,
